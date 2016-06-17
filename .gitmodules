@@ -1,0 +1,6 @@
+[submodule "tweet-stream"]
+	path = tweet-stream
+	url = https://github.com/zubairsaiyed/tweet-stream.git
+[submodule "tweet-storm"]
+	path = tweet-storm
+	url = https://github.com/zubairsaiyed/tweet-storm.git
