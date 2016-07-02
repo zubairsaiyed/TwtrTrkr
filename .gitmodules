@@ -4,3 +4,6 @@
 [submodule "tweet-storm"]
 	path = tweet-storm
 	url = https://github.com/zubairsaiyed/tweet-storm.git
+[submodule "tweet-tracker"]
+	path = tweet-tracker
+	url = https://github.com/zubairsaiyed/tweet-tracker.git
