@@ -16,14 +16,14 @@ While in this case the architecture was employed to track aggregate Twitter user
 
 For the purposes of my application I decided to use Apache Kafka to manage ingestion of the Twitter Streaming API as well as the user generated queries. Storm then consumes messages from Kafka shuffling new queries across the distributed query indicies (implemented by Luwak) or broadcasted tweets through the virtual query index. Matching tweets are then processed by the NLTK tool, VADER, to generate a sentiment rating before being aggregated by query in a final layer of Storm bolts. Ultimately the aggregated user sentiments are passed from Storm through a Redis PubSub framework before being displayed to each user.
 
-![Pipeline](https://github.com/zubairsaiyed/TwtrTrkr/blob/master/images/pipeline.png)
+![Pipeline](https://github.com/zubairsaiyed/TwtrTrkr/blob/master/images/pipeline.svg)
 
 ## Implementation
 
 This source code for this project is contained across three modules:
 
 * [tweet-stream](https://github.com/zubairsaiyed/tweet-stream/)
- * Kafka producers connecting to the Twitter API Stream
+ * Kafka producers gathering tweets from the Twitter API Stream
 * [tweet-storm](https://github.com/zubairsaiyed/tweet-storm/)
  * The storm topology integrating with Lucene Luwak and NLTK VADER
 * [tweet-ui](https://github.com/zubairsaiyed/tweet-ui/)
