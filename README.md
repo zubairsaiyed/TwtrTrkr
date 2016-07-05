@@ -1,8 +1,8 @@
 # TwtrTrkr
 
-[TwtrTrkr.xyz](twtrtrkr.xyz) was designed to allow real-time tracking of Twitter users' sentiment. The application implements a distributed real-time streaming querying system that is engineered to scale to large input streams and large volumes of queries.
+[TwtrTrkr.xyz](http://twtrtrkr.xyz) was designed to allow real-time tracking of Twitter users' sentiment. The application implements a distributed real-time streaming querying system that is engineered to scale to large input streams and large volumes of queries.
 
-While in this case the architecture was employed to track aggregate Twitter users' sentiment (which could have many potential business & market research applications), this design could easily be re-purposed to perform large scale parsing or filtering of almost any real-time source against voluminous queries.
+While in this case the architecture was employed to track aggregate Twitter users' sentiment (which could have many potential business & market research applications), this design could easily be re-purposed to perform large scale parsing or filtering of almost any real-time source against voluminous numbers of queries.
 
 ## Pipeline
 
@@ -39,4 +39,4 @@ However, Luwak as-is is not capable of handling arbitrarily large numbers of que
 
 ## Technical Presentation
 
-A brief technical presentation on the design of this system is accessible [here](http://bit.do/twtrtrkr).
+A brief technical presentation on the design of this system is accessible [here](https://docs.google.com/presentation/d/1tiJtc4KkFf0b0snIvEFN8zApxwe0DeAr71PqwluQ9Cc/embed?start=false&loop=false&delayms=3000).
